@@ -103,6 +103,7 @@ public class QuizServiceTests {
 		BasicRes res = quizService.createOrUpdate(req);
 		// Assert: 斷言，.isTrue(a,"b")，當執行括號內 a 程式，結果為 false 時，會在 JUnit- Failure Trace丟出錯誤訊息"b"
 		Assert.isTrue(res.getMessage().equalsIgnoreCase("Param start date error!!"), "create test false!!");
+		System.out.println("================================");
 	}
 	
 	
